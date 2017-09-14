@@ -14,6 +14,7 @@ rm -f usr/bin/fabio etc/fabio/fabio.properties *.rpm
 
 
 echo -e "\033[32mDownload fabio...\033[0m" 
+if [ ! -d etc/fabio ]; then mkdir etc/fabio; fi
 if [ ! -d usr/bin ]; then mkdir usr/bin; fi
 wget https://raw.githubusercontent.com/fabiolb/fabio/v${FABIO_VERSION}/fabio.properties -O etc/fabio/fabio.properties
 wget https://github.com/fabiolb/fabio/releases/download/v${FABIO_VERSION}/fabio-${FABIO_VERSION}-go${GO_VERSION}-linux_amd64 -O usr/bin/fabio
