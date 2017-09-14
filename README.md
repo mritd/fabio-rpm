@@ -1,4 +1,4 @@
-## consul-rpm
+## fabio-rpm
 
 ### 安装 fpm
 
@@ -19,5 +19,5 @@ gem install fpm
 ### build rpm
 
 ``` sh
-./build.sh 0.9.3
+./build.sh 1.5.2 
 ```
